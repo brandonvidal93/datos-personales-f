@@ -1,0 +1,223 @@
+@import "../resources/colors";
+@import "../resources/animation.scss";
+
+.draggableCircle {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 500px;
+  height: 500px;
+  background-image: url('../assets/img/backgrounds/bgPage-4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .itemDrag, .itemDrop { position: absolute; }
+
+  .onDrag {
+    opacity: 0.5;
+  }
+
+  .infoGloble {
+    position: absolute;
+    background-color: $blanco;
+    padding: 1em;
+    z-index: 4;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border-width: 3px;
+    border-style: solid;
+    width: 85%;
+
+    .titleCircle {
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #CECECE;
+      width: 100%;
+    }
+
+    .buttonClose {
+      position: absolute;
+      top: 3px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0);
+      .iconButton {
+        color: red;
+        font-size: 2.3em;
+        transition: all .3s;
+      }
+
+      &:hover {
+        .iconButton {
+          color: #cf0000;
+        }
+      }
+    }
+  }
+
+  .triang-izq {
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-right: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      left: -12px;
+    }
+  }
+
+  .triang-der {
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+  }
+
+  #infoDrop-1 {
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #1FBDED;
+      position: absolute;
+      top: 39.4%;
+      right: -17px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+  }
+
+  #infoDrop-2 {
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #FBB03B;
+      position: absolute;
+      top: 39%;
+      right: -17px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+  }
+
+  #infoDrop-3 {
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #8CC63F;
+      position: absolute;
+      top: 39%;
+      right: -17px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+  }
+
+  #infoDrop-4 {
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #93278F;
+      position: absolute;
+      top: 39%;
+      right: -17px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+  }
+
+  #infoDrop-5 {
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #D4145A;
+      position: absolute;
+      top: 39%;
+      right: -17px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid $blanco;
+      position: absolute;
+      top: 40%;
+      right: -12px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../resources/colors.scss";
+@import "../../resources/animation.scss";
+
+.menuContent {
+  min-height: 650px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  .itemsContent {
+    transition: all .7s;
+
+    .disabledButton {
+      filter: grayscale(1);
+      pointer-events: none;
+    }
+
+    .animation {
+      animation-name: pulse;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .buttonTheme {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      .btnStyle {
+        background-color: rgba(251, 251, 251, 0);
+        transition: all .4s;
+        transform: scale(0.8);
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

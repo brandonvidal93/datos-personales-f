@@ -1,0 +1,205 @@
+@import "../resources/colors.scss";
+@import "../resources/animation.scss";
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  max-width: 1024px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+
+  .restrict {
+    position: absolute;
+    z-index: 2;
+    bottom: 7px;
+    right: 330px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .labelFooter {
+    position: absolute;
+    width: auto;
+    color: $color22;
+    top: 8px;
+    left: 102px;
+  }
+
+  .imageFooter {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    margin: 0 auto;
+    pointer-events: none;
+    width: 150px;
+  }
+
+  .buttonPannel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 12px;
+    right: 335px;
+    // z-index: 1;
+    width: 89px;
+
+    .buttonNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: $blanco;
+      border-radius: 50%;
+      border: 4px solid $color22;
+      text-align: center;
+      box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s;
+
+      .iconButton {
+        pointer-events: none;
+        color: $color22;
+        &:hover {
+          color: $blanco;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 8px 12px -5px rgba(0, 0, 0, 0.6);
+        background-color: $color22;
+        .iconButton {
+          color: $blanco;
+        }
+      }
+    }
+  }
+
+  .numberPage {
+    position: absolute;
+    color: $color22;
+    top: 0px;
+    left: 30px;
+  }
+}
+
+.footer-desc {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 50px;
+  max-width: 1024px;
+  bottom: 0px;
+  left: 0px;
+  // border-top: 1px solid #FF6A3D;
+  // z-index: 1;
+
+  /* .restrict {
+    position: absolute;
+    z-index: 2;
+    bottom: 92px;
+    right: 7px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .labelFooter {
+    width: auto;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -35px;
+      width: 25px;
+      height: 2px;
+      background-color: $color2;
+    }
+  }
+
+  .imageFooter {
+    position: absolute;
+    bottom: 21px;
+    right: 215px;
+    width: 145px;
+    margin: 0 auto;
+    pointer-events: none;
+  }
+
+  .buttonPannel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 15px;
+    right: 55px;
+    z-index: 1;
+    // border: 1px solid;
+
+    .buttonNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      background-color: $color4;
+      border-radius: 50%;
+      border: 0;
+      text-align: center;
+      box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s;
+
+      .iconButton { pointer-events: none; color: $color1; }
+
+      &:hover {
+        box-shadow: 0 8px 12px -5px rgba(0, 0, 0, 0.6);
+
+        .iconButton { color: $color2; }
+      }
+    }
+  }
+
+  .box-bg {
+    bottom: 0px;
+    right: -1px;
+    .background-1 {
+      bottom: 0;
+      right: 0;
+    }
+    .bgStars {
+      bottom: 17px;
+      right: 8px;
+    }
+    .bgPlaneta {
+      bottom: 130px;
+      right: 80px;
+      width: 100px;
+    }
+    .bgCohete {
+      bottom: 510px;
+      right: 100px;
+      transform: rotateY(180deg);
+      width: 130px;
+    }
+    .bgAstronner {
+      bottom: 220px;
+      right: -70px;
+      transform: rotateY(180deg) rotateZ(45deg);
+      width: 200px;
+    }
+  } */
+}
