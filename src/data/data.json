@@ -3627,7 +3627,7 @@
       }
     },
     "logoCourse": "img/cover/logo-1.png",
-    "buttonEnd": "Cierra la ventana para finalizar",
+    "buttonEnd": "Finalizar",
     "background": {
       "bg": "img/cover/end.jpg"
     }
