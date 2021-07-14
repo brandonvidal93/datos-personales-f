@@ -1483,6 +1483,11 @@ class Page31 extends Component {
 }
 
 class Page32 extends Component {
+  closeCourse = () => {
+    // ESTO SOLO SE EJECUTA CUANDO SE INICIA EL SERVIDOR O CUANDO SE ABRE COMO EMERGENTE
+    window.parent.parent.close();
+  }
+
   render() {
     const { dataPage, calificacion } = this.props;
     console.log('Calificación: ' + calificacion);
@@ -1515,11 +1520,12 @@ class Page32 extends Component {
             dataPage.message.success.subTitle ? <h3 className = 'mR-2 tCenter F2-5' dangerouslySetInnerHTML = {{ __html: calificacion >= 70 ? dataPage.message.success.subTitle : dataPage.message.error.subTitle }}></h3> : null
           }
 
-          <p
-            className = 'buttonEnd mT-2 pT-05 pB-05 pR-1 pL-1'
+          <h2
+            className = 'buttonEnd fw-4 mT-2 pT-05 pB-05 pR-1 pL-1'
+            onClick = { this.closeCourse }
             id = 'btnEnd'>
             { dataPage.buttonEnd }
-          </p>
+          </h2>
 
           { /* Restricción de avance <div className = { 'restrict-3 ' + (endActivities === true ? 'dNone' : '') } /> */ }
         </div>
