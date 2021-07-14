@@ -54,7 +54,7 @@ class App extends Component {
       unitActual: 1,
       nextUnit: 1,
       pages: LIMIT,
-      index: 32,
+      index: 0,
       menuPosition: 125,
       conectLMS: false,
       lastPage: false,
